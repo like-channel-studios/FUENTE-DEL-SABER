@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuente del Saber | Unidad Educativa</title>
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Iconos FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <div class="logo-circle">FS</div>
+        <div class="brand-text">
+          <span class="brand-title">FUENTE DEL SABER</span>
+          <span class="brand-subtitle">UNIDAD EDUCATIVA</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#eventos">Eventos</a>
+        <a href="#normas">Normas</a>
+        <a href="#contacto">Contacto</a>
+        <button id="btn-directiva-nav" class="btn-directiva">
+          <i class="fa-solid fa-lock"></i> Directiva
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>EXCELENCIA Y VALORES</span>
+        </div>
+        <h1 class="hero-title">
+          Forjando el futuro en la <br>
+          <span class="highlight-gold">Fuente del Saber</span>
+        </h1>
+        <p class="hero-description">
+          Comprometidos con la educación integral, el desarrollo moral y la formación cívica de las nuevas generaciones de Venezuela.
+        </p>
+        <div class="hero-buttons">
+          <a href="#eventos" class="btn-primary">Ver Actividades</a>
+          <a href="#normas" class="btn-outline">Normas Escolares</a>
+        </div>
+      </div>
+
+      <div class="hero-graphic">
+        <div class="glow-effect"></div>
+        <div class="shield-illustration">
+          <i class="fa-solid fa-shield-halved main-shield-icon"></i>
+          <p class="shield-label">Escudo Fuente del Saber</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bottom-bar"></div>
+  </section>
+
+  <!-- CARTELERA DE EVENTOS (Estilo Roblox con cuenta regresiva e historial) -->
+  <section id="eventos" class="events-section container">
+    <div class="section-header">
+      <h2 class="section-title">Cartelera de Eventos</h2>
+      <div class="title-underline"></div>
+      <p class="section-subtitle">Mantente informado sobre las actividades culturales, deportivas y académicas.</p>
+    </div>
+
+    <!-- Pestañas de Eventos -->
+    <div class="tab-switcher">
+      <button id="tab-proximos" class="tab-btn active">
+        <i class="fa-regular fa-calendar-check"></i> Próximos
+      </button>
+      <button id="tab-anteriores" class="tab-btn">
+        <i class="fa-regular fa-clock"></i> Anteriores
+      </button>
+    </div>
+
+    <!-- Contenedor dinámico de eventos -->
+    <div id="events-grid" class="events-grid">
+      <!-- Se llena mediante JavaScript -->
+    </div>
+
+    <!-- Vista de estado vacío por defecto -->
+    <div id="empty-events" class="empty-state hidden">
+      <div class="empty-icon-box">
+        <i class="fa-regular fa-calendar"></i>
+      </div>
+      <h3>No hay eventos para mostrar</h3>
+      <p>Actualmente no existen registros en esta categoría.</p>
+    </div>
+  </section>
+
+  <!-- ACUERDOS DE CONVIVENCIA (MINISTERIO DE EDUCACIÓN) -->
+  <section id="normas" class="normas-section">
+    <div class="normas-banner">
+      <div class="container normas-banner-container">
+        <div class="normas-banner-text">
+          <span class="sub-tag">MINISTERIO DE EDUCACIÓN</span>
+          <h2>Acuerdos de Convivencia</h2>
+          <p>Normativas oficiales establecidas para promover el respeto, la responsabilidad y la armonía escolar en nuestra institución.</p>
+        </div>
+        <div class="normas-banner-icon">
+          <div class="yellow-shield">
+            <i class="fa-solid fa-shield-check"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container normas-grid-container">
+      <div class="normas-grid">
+        <div class="norma-card">
+          <div class="norma-number">1</div>
+          <div class="norma-content">
+            <h3>Respeto a la Identidad Nacional</h3>
+            <p>Fomentar el amor a la patria, el respeto a los símbolos patrios, a los valores culturales y a nuestra historia, como pilar de la formación integral.</p>
+          </div>
+        </div>
+
+        <div class="norma-card">
+          <div class="norma-number">2</div>
+          <div class="norma-content">
+            <h3>Trato Respetuoso y Digno</h3>
+            <p>Garantizar un trato afable y tolerante entre todos los miembros de la comunidad educativa, prohibiendo estrictamente cualquier forma de acoso escolar (bullying) o discriminación.</p>
+          </div>
+        </div>
+
+        <div class="norma-card">
+          <div class="norma-number">3</div>
+          <div class="norma-content">
+            <h3>Responsabilidad Académica</h3>
+            <p>Asistencia puntual a clases, cumplimiento con las tareas y evaluaciones, y el mantenimiento de una actitud participativa y de esfuerzo constante.</p>
+          </div>
+        </div>
+
+        <div class="norma-card">
+          <div class="norma-number">4</div>
+          <div class="norma-content">
+            <h3>Cuidado del Recinto Escolar</h3>
+            <p>Preservar los espacios físicos, mobiliario, laboratorios y áreas verdes de la institución, entendiendo que son patrimonio de todos los estudiantes.</p>
+          </div>
+        </div>
+
+        <div class="norma-card">
+          <div class="norma-number">5</div>
+          <div class="norma-content">
+            <h3>Uso Adecuado del Uniforme</h3>
+            <p>Portar el uniforme escolar reglamentario de manera pulcra y correcta, respetando los distintivos de la Unidad Educativa Fuente del Saber en todo momento.</p>
+          </div>
+        </div>
+
+        <div class="norma-card">
+          <div class="norma-number">6</div>
+          <div class="norma-content">
+            <h3>Comunicación Asertiva</h3>
+            <p>Resolver los conflictos a través del diálogo, acudiendo a los docentes, orientadores o directivos cuando sea necesario meidiar en alguna situación.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA (FOOTER) -->
+  <footer id="contacto" class="footer">
+    <div class="footer-top-line"></div>
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <div class="white-logo-circle"></div>
+          <div>
+            <h3>FUENTE DEL SABER</h3>
+          </div>
+        </div>
+        <p class="footer-description">
+          Formando ciudadanos críticos, responsables y comprometidos con el desarrollo integral de la nación venezolana desde nuestras aulas.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com/uepfds.oficial" target="_blank" class="social-btn">ig</a>
+        </div>
+      </div>
+
+      <div class="footer-col links-col">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#eventos"><i class="fa-solid fa-chevron-right"></i> Cartelera de Eventos</a></li>
+          <li><a href="#normas"><i class="fa-solid fa-chevron-right"></i> Normas de Convivencia</a></li>
+          <li><a href="#" id="link-directiva-footer"><i class="fa-solid fa-chevron-right"></i> Acceso Directiva</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h4>Ubicación y Contacto</h4>
+        <ul>
+          <li>
+            <i class="fa-solid fa-location-dot contact-icon"></i>
+            <span>Entre esquinas de Toro a Cardones, Av. Norte 8, Altagracia, Caracas, Distrito Capital.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone contact-icon"></i>
+            <span>+58 (212) 864-6239 / 862-6281</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <span>contacto@fuentedelsaber.edu.ve</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; 2026 Unidad Educativa Fuente del Saber. Todos los derechos reservados.</p>
+        <span>Excelencia Institucional</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE PUBLICACIÓN DIRECTIVA -->
+  <div id="modal-directiva" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-pen-to-square"></i> Panel Directivo - Publicar Evento</h3>
+        <button id="btn-close-modal" class="btn-close">&times;</button>
+      </div>
+      <form id="form-nuevo-evento" class="modal-body">
+        <div class="form-group">
+          <label for="titulo-evento">Título del Evento:</label>
+          <input type="text" id="titulo-evento" placeholder="Ej: Juegos Deportivos Intercursos" required>
+        </div>
+
+        <div class="form-group">
+          <label for="fecha-evento">Fecha y Hora:</label>
+          <input type="datetime-local" id="fecha-evento" required>
+        </div>
+
+        <div class="form-group">
+          <label for="categoria-evento">Categoría:</label>
+          <select id="categoria-evento">
+            <option value="Cultura">Cultural</option>
+            <option value="Deporte">Deportiva</option>
+            <option value="Academia">Académica</option>
+            <option value="Institucional">Institucional</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="descripcion-evento">Descripción del Evento:</label>
+          <textarea id="descripcion-evento" rows="3" placeholder="Escribe los detalles o requisitos del evento..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="imagen-evento">URL de Imagen / Banner (Opcional):</label>
+          <input type="url" id="imagen-evento" placeholder="https://ejemplo.com/imagen.jpg">
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" id="btn-cancelar-modal" class="btn-secondary">Cancelar</button>
+          <button type="submit" class="btn-submit">Publicar Evento</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Principal -->
+  <script src="script.js"></script>
+</body>
+</html>
